@@ -1,0 +1,238 @@
+ body {
+  display:flex ;
+  background-color: bisque;
+  box-shadow: 15px;
+  justify-content: center;
+}
+
+
+/* Add styles for the main container */
+/* .container {
+  box-shadow: 10px;
+  max-width: 1200px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+/* } */ 
+
+/* Style the search input and dropdowns */
+/* input[type="text"], select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+/* Style the repository cards */
+/* .repo-card {
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  opacity: 0; Start hidden for fade-in effect */
+  /* animation: fadeIn 0.5s forwards; Fade-in animation */
+  /* width: calc(33.333% - 20px); Three cards per row */
+/* } */
+
+.repo-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Style the repository title */
+/* .repo-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #0366d6; GitHub blue */
+/* } */
+
+/* Style the repository description */
+/* .repo-card p {
+  margin: 5px 0;
+  color: #586069; /* Dark gray */
+/* } / */
+
+/* Style for stars, forks, and language */
+/* .repo-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 70px;
+} */
+
+/* Keyframes for fade-in animation */
+/* @keyframes fadeIn {
+  to {
+    opacity: 1; /* Fully visible */
+  /* } */
+/* } */
+@media (max-width: 768px) {
+  .repo-card {
+    background-color:
+  }
+} 
+/* Add styles for the main container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+.container {
+  flex: 1; /* Allow the container to grow and take available space */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+}
+
+/* Style the search input and dropdowns */
+input[type="text"], select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the repository cards */
+.repo-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  opacity: 0; /* Start hidden for fade-in effect */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+  width: calc(33.333% - 20px); /* Three cards per row */
+}
+
+.repo-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Style the repository title */
+.repo-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #0366d6; /* GitHub blue */
+}
+
+/* Style the repository description */
+.repo-card p {
+  margin: 5px 0;
+  color: #586069; /* Dark gray */
+}
+
+/* Style for stars, forks, and language */
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fully visible */
+  }
+}
+/* Add styles for the main container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+.container {
+  flex: 1; /* Allow the container to grow and take available space */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+}
+
+/* Style the search input and dropdowns */
+input[type="text"], select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the repository cards */
+.repo-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  opacity: 0; /* Start hidden for fade-in effect */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+  width: calc(33.333% - 20px); /* Three cards per row */
+}
+
+.repo-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Style the repository title */
+.repo-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #0366d6; /* GitHub blue */
+}
+
+/* Style the repository description */
+.repo-card p {
+  margin: 5px 0;
+  color: #586069; /* Dark gray */
+}
+
+/* Style for stars, forks, and language */
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fully visible */
+  }
+}

@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  margin-top: 0px;
+  background-color: #24292e; /* GitHub header background color */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.header-title {
+  font-size: 1.5em;
+  margin: 0;
+  flex-grow: 1; /* Allow title to take available space */
+}
+
+.github-logo {
+  width: 70px; /* Set a smaller width for the logo */
+  height: 50px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and title */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"], select {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

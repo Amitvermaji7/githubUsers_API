@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Header Styles */
+.header {
+  background-color: #24292e; /* GitHub header background color */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.header-title {
+  font-size: 1.5em;
+  margin: 0;
+  flex-grow: 1; /* Allow title to take available space */
+}
+
+.github-logo {
+  width: 20px; /* Set a smaller width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and title */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Input and Select Styles */
+input[type="text"], select {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Repository Card Styles */
+.container {
+  flex: 1; /* Allow the container to grow and take available space */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  gap: 20px; /* Space between cards */
+}
+
+.repo-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.5s; /* Added opacity transition */
+  width: calc(33.333% - 20px); /* Three cards per row */
+  opacity: 0; /* Start with opacity 0 for fade-in effect */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+.repo-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fade to full opacity */
+  }
+}
+
+/* Repository Title and Description Styles */
+.repo-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #0366d6; /* GitHub blue */
+}
+
+.repo-card p {
+  margin: 5px 0;
+  color: #586069; /* Dark gray */
+}
+
+/* Repository Stats Styles */
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Light Theme */
+.light {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.dark .header {
+  background-color: #24292e; /* Dark header background */
+}
+
+.dark .repo-card {
+  background-color: #1e1e1e; /* Dark card background */
+  border: 1px solid #444; /* Darker border */
+}
+
+.dark .repo-card h2 {
+  color: #58a6ff; /* Lighter blue for repo titles */
+}
+
+.dark .repo-card p {
+  color: #c9d1d9; /* Light gray for descriptions */
+}
+
+.dark footer {
+  background-color: #2d2d2d; /* Dark footer background */
+}
+
+/* Blue Theme */
+.blue {
+  background-color: #e0f7fa; /* Light blue background */
+  color: #000000; /* Dark text */
+}
+
+.blue .header {
+  background-color: #007bbf; /* Blue header background */
+}
+
+.blue .repo-card {
+  background-color: #b3e5fc; /* Light blue card background */
+  border: 1px solid #0288d1; /* Blue border */
+}
+
+.blue .repo-card h2 {
+  color: #01579b; /* Darker blue for repo titles */
+}
+
+.blue .repo-card p {
+  color: #004d40; /* Darker text for descriptions */
+}
+
+/* Green Theme */
+.green {
+  background-color: #e8f5e9; /* Light green background */
+  color: #000000; /* Dark text */
+}
+
+.green .header {
+  background-color: #388e3c; /* Green header background */
+}
+
+.green .repo-card {
+  background-color: #c8e6c9; /* Light green card background */
+  border: 1px solid #2e7d32; /* Darker green border */
+}
+
+.green .repo-card h2 {
+  color: #1b5e20; /* Darker green for repo titles */
+}
+
+.green .repo-card p {
+  color: #3e2723; /* Darker text for descriptions */
+}
