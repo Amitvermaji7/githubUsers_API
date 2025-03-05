@@ -1,5 +1,5 @@
 demo here
-https://github-users-api-pink.vercel.app/
+https://suno-zara-clone.vercel.app/
 
 # GitHub Repository Explorer
 
