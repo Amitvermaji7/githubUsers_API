@@ -55,7 +55,7 @@ function App() {
             }
           })
           .map(repo => (
-            // रिपॉजिटरी कार्ड कंपोनेंट को अपडेट करें (App.jsx में)
+            // Render each repository card
             <div key={repo.id} className="repo-card">
               <div className="repo-header">
                 <img src={repo.owner.avatar_url} alt="Owner Avatar" className="owner-avatar" />
