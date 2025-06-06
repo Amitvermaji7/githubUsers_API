@@ -300,7 +300,7 @@ footer {
   color: #3e2723; /* Darker text for descriptions */
 }
 
-/* मोबाइल रिस्पॉन्सिवनेस के लिए मीडिया क्वेरीज जोड़ें */
+
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
