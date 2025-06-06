@@ -55,14 +55,30 @@ function App() {
             }
           })
           .map(repo => (
+            // रिपॉजिटरी कार्ड कंपोनेंट को अपडेट करें (App.jsx में)
             <div key={repo.id} className="repo-card">
-              <h2 className='repo_name'>{repo.name}</h2>
-              <p>{repo.description}</p>
-              <div className="repo-stats">
-                <p>Stars: {repo.stargazers_count}</p>
-                <p>Forks: {repo.forks_count}</p>
-                <p>Language: {repo.language}</p>
+              <div className="repo-header">
+                <img src={repo.owner.avatar_url} alt="Owner Avatar" className="owner-avatar" />
+                <h2 className='repo_name'>{repo.name}</h2>
               </div>
+              <p className="repo-description">{repo.description || "कोई विवरण उपलब्ध नहीं"}</p>
+              <div className="repo-stats">
+                <div className="stat-item">
+                  <span className="stat-icon">⭐</span>
+                  <span>{repo.stargazers_count.toLocaleString()}</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-icon">🍴</span>
+                  <span>{repo.forks_count.toLocaleString()}</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-icon">💻</span>
+                  <span>{repo.language || "N/A"}</span>
+                </div>
+              </div>
+              <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="view-repo-btn">
+                View Repository
+              </a>
             </div>
           ))}
       </div>
